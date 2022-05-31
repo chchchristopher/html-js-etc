@@ -1,0 +1,22 @@
+"" + 1 + 0: "10" // addition with a string "" + 1 converts 1 to string: ""
++ 1 = "1", then "1" + 0, the 0 becomes a string too
+
+"" -1 + 0: -1 // subtraction only works with numbers so "" is converted to 0
+true + false: // 1, these are not strings so it's not "truefalse", since it's
+a +, then it's coerced to numbers.
+6 / "3": 2
+"2" * "3": 6
+4 + 5 + "px": "9px" // 4+5=9, then 9 concats with "px"
+"$" + 4 + 5: "$45"
+"4" - 2: 2
+"4px" - 2: NaN // can't subtract strings
+"   -9   " + 5: "   -9   5" // "   -9   " is a string, so the + is taken to be
+concat
+"   -9   " - 5: -14 // subtraction only available on numbers so "   -9
+" converted to number
+null + 1: 1 // null becomes 0
+undefined + 1: NaN // undefined becomes NaN
+" \t \n" - 2: -2 // Space characters are trimmed when converted to a number,
+which it needs to do since it's subtraction, so 0-2 = -2. 
+
+

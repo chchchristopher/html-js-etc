@@ -1,0 +1,42 @@
+1. Numbers
+- Number(value) will explicitly convert the value to a number type
+- Strings can be "read" as numbers, including stripping whitespace
+- If it can't be read as a number, "hi" or even "123z", it will be NaN
+- null converts to 0
+- undefined converts to NaN
+- true, false converts to 1, 0
+
+2. Bools
+- values which are intuitively "empty" become false:
+  - 0, empty string, null, undefined, NaN
+  - others are true
+*** "0" becomes true, because it is a non-empty string
+
+3. Strings
+- When concatenating, if either operand is a string, the other is converted to
+  a string too
+
+'1' + 2 // 12
+
+Prefix with + to convert to a number too
++true would be 1 ... +"" would be 0
+
+*** Funkiness ***
+"=" is an operator. The call x = value assigns to x, THEN RETURNS IT.
+let a = 1;
+let b = 2;
+let c = 3 - (a = b + 1);
+// Now a will be 3, and c will be 3 - 3 = 0. 
+Gross but valid
+
+Can also chain assignment:
+let a, b, c;
+a = b = c = 4 + 4; // All are set to 8
+
+
+Shortcut for converting to Boolean (why though)
+!!("non-empty string") // !("non-empty string") converts to the inverse of the
+boolean, then prepending another ! gives the inverse-inverse. 
+
+!!null // false... !null is null converted to boolean with !, and then given
+its actual value by inversing the inverse

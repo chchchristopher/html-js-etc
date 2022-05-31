@@ -1,0 +1,43 @@
+JS is dynamically-typed, can re-assign an int to be a string
+8 data types
+
+1. Number -- both int and float
+Specials: NaN, Infinity, -Infinity
+Infinity is bigger than any other number, can get by dividing by 0
+
+** Math operations will never fatally error, at worst get NaN
+
+numbers are typically limited to 2^53 - 1
+can use BigInt for bigger ones, by appending an "n" to the number.
+const bigInt = 1234567890123456789012345678901234567890n;
+
+2. Strings
+Double-quotes, single-quotes, and back-ticks (for additional functionality)
+*** No "character" data type
+
+3. Booleans
+As expected. Can do like isItThough = 4 > 5; and isItThough is a bool (false)
+
+4. null
+- unlike other langs, not a "reference to non-existing object"
+  nor a "null pointer"
+Just a special value that represents "nothing", "empty", "value unknown"
+
+5. undefined
+Similar to null in that it stands apart, but this means a value has not been
+assigned.
+let age; alert(age); // shows "undefined", we haven't assigned a val to age
+
+6. Objects and Symbols
+All other types are "primitive" in that they can contain only one type of thing
+Objects contain more complicated entities. Collections of data, etc.
+"symbol" type is used to create identifiers for objects.
+- Will be covered later
+
+7. typeof
+typeof returns type of argument -- good for processing different types
+typeof 0 // "number"
+typeof 10n // "bigint"
+NOTE:
+typeof null // "object" -- an officially recognized error in typeof
+- Can also see typeof(x) but this is the same as "typeof x"

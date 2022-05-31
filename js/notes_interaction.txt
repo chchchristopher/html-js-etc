@@ -1,0 +1,21 @@
+Alert, Prompt, Confirm
+
+The mini-window which appears like with alert(message); is called
+a modal window
+The user can't interact with the rest of the page until they've dealt with the
+window. In alert()'s case, until they press OK. 
+
+prompt: creates a modal window for user to enter input
+- includes a default
+- returns "null" if cancel is hit
+
+confirm: creates a modal window with text and OK or Cancel
+- OK returns true, Cancel returns false
+
+
+With all of these:
+- location of modal window is decided by browser, typically center
+- style of modal window also decided by browser, can't change it
+
+There are other ways of richer/interactive interactions with user
+but these are the simplest ones

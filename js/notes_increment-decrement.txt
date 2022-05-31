@@ -1,0 +1,14 @@
+when to prefix/postfix, and when it doesn't matter:
+
+If result of the increment/decrement is discarded, doesn't matter
+let counter = 0;
+counter++;
+++counter; // counter now is 2
+
+if we want to increase and immediately use, we use prefix:
+let counter = 0;
+alert(++counter); // 1
+
+if we want to increase but use its prev value, use postfix:
+let counter = 0;
+alert(counter++); // returns 0, but counter is now 1

@@ -1,0 +1,61 @@
+If using src=... to use external .js in html file, cannot also use use
+script code in the same <script></script>
+However can do:
+  <script src="file.js"></script>
+  <script>
+    alert(1);
+  </script>
+
+Can omit semicolons in most but not all cases, best is to just use them
+
+"use strict"; enforces ... things. It can go at the top to apply to everything,
+but can also be put in a function to only apply to that function
+
+When at the top, it can have comments above it, but only comments.
+
+Classes and modules "use strict" automatically
+
+"let" is new-variable, but older style is "var" -- some differences but no
+worries for a beginner
+
+camelCase is typical
+$ and _ are not special characters and can be used in variable names
+
+Case matters, 'APPLE' is different variable than 'apple'
+
+In old-js, can omit 'let' and just declare/assign like:
+myVar = 5;
+but this will fail if "use strict"; and bad practice
+
+const variables can't be changed, communicates this fact to someone reading
+code
+
+widespread practice to use caps for const vars of things we don't want to
+remember
+const COLOR_RED = "#F00";
+const COLOR_BLUE = "#00F";
+let color = COLOR_RED
+
+
+*** Commas ***
+
+Weird stuff here, mostly for combining multiple things into one line
+Bad readability, but can read about on MDN
+
+Interesting note about "let"
+Using multiple scripts in an html as I'm doing, I find I cannot do let a = ...
+and then do let a = ... in a different script! 
+So the value of the first "let a = ..." is still there somewhere. 
+Fixed by changing to "let A = ..." but could also leave out "let" because the
+variable is already initialized
+
+Comparing strings:
+lexicographic, so "Glow" > "Glee" will return true, since 'o' > 'e'
+- a note though, this is based on unicode order. So "a" > "A" since it's later
+  in the unicode
+
+*** Comparison between types ***
+null == undefined, 0 == false, "2" > "12", conversions, .... 
+It's pretty dirty and look into it if and when needed
+
+
