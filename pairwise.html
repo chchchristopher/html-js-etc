@@ -4,12 +4,10 @@
 
 <h1>Pairwise deck creator</h1>
 
-<p id="main">Here is where the text fields will be generated.</p>
-
-<button type="button" onclick="loadDoc()">Default replacement</button>
 
 <label for="order">Select the order</label>
-	<select name="order" id="order">
+	<select name="order" id="order" onchange="loadDoc(this.value)">
+    <option value="0" selected=true disabled=true>Choose an order</option>
 		<option value="2">2</option>
 		<option value="3">3</option>
 		<option value="5">5</option>
@@ -18,7 +16,9 @@
 		<option value="13">13</option>
 	</select>
 
-<script src="01.js">
+<p id="main">Here is where the text fields will be generated.</p>
+
+<script src="pairwise.js">
 </script>
 
 </body>
