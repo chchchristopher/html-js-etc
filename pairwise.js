@@ -9,3 +9,10 @@ function loadDoc(value) {
   xhttp.open("GET", loc, true);
   xhttp.send();
 }
+
+const form  = document.getElementById('order2');
+
+function makeDeck() {
+
+  document.getElementById('deck').innerHTML="Here's your deck";
+}

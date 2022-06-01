@@ -1,3 +1,0 @@
-<p>Text entry 1</p>
-<p>Text entry 2</p>
-<p>etc</p>

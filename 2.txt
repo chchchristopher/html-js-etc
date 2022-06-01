@@ -1,5 +1,5 @@
 <p><h2>Here's number 2!</h2></p>
-<form>
+<form id="order2">
   <ul>
     <li>
       <label for="1">1</label>:
@@ -30,7 +30,7 @@
       <input type="text" id="7" name="7"><br>
     </li>
     <li class="button">
-      <button type="submit" disabled=true>Make the deck</button>
+      <button type="button" onclick="makeDeck()">Make the deck</button>
     </li>
   </ul>
 </form>

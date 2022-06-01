@@ -1,0 +1,2 @@
+Used <button type="button"> to stop page reloading, and instead ajax into the
+"deck" <p>
