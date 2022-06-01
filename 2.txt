@@ -1,1 +1,36 @@
-<p>Here's number 2</p>
+<p><h2>Here's number 2!</h2></p>
+<form>
+  <ul>
+    <li>
+      <label for="1">1</label>:
+      <input type="text" id="1" name="1"><br>
+    </li>
+    <li>
+      <label for="2">2</label>:
+      <input type="text" id="2" name="2"><br>
+    </li>
+    <li>
+      <label for="3">3</label>:
+      <input type="text" id="3" name="3"><br>
+    </li>
+    <li>
+      <label for="4">4</label>:
+      <input type="text" id="4" name="4"><br>
+    </li>
+    <li>
+      <label for="5">5</label>:
+      <input type="text" id="5" name="5"><br>
+    </li>
+    <li>
+      <label for="6">6</label>:
+      <input type="text" id="6" name="6"><br>
+    </li>
+    <li>
+      <label for="7">7</label>:
+      <input type="text" id="7" name="7"><br>
+    </li>
+    <li class="button">
+      <button type="submit" disabled=true>Make the deck</button>
+    </li>
+  </ul>
+</form>
